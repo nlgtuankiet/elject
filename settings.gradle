@@ -1,0 +1,2 @@
+include ':app', ':elject-annotations', ':elject-processor', ':elject-core'
+rootProject.name='elject'
