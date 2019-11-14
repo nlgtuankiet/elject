@@ -28,6 +28,13 @@ buildscript {
                     'processor': "net.ltgt.gradle.incap:incap-processor:${versions.incap}",
             ],
     ]
+
+    ext.groupProjectID = 'com.nlgtuankiet.elject'
+    ext.publishVersionID = '0.1.1'
+    ext.githubPage = 'https://github.com/nlgtuankiet/elject'
+    ext.userOrgID = 'nlgtuankiet'
+    ext.repoNameID = 'rainyseason'
+
     repositories {
         google()
         jcenter()
@@ -36,6 +43,7 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}"
+        classpath 'com.novoda:bintray-release:0.9.1'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }

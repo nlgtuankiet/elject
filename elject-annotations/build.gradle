@@ -1,4 +1,15 @@
 apply plugin: 'java-library'
+apply plugin: 'com.novoda.bintray-release'
+
+publish {
+    userOrg = userOrgID
+    repoName = repoNameID
+    groupId = groupProjectID
+    artifactId = 'elject-annotations'
+    publishVersion = publishVersionID
+    desc = githubPage
+    website = githubPage
+}
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
